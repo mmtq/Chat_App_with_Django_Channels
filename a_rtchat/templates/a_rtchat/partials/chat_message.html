@@ -1,5 +1,6 @@
+<div id ='chat_messages' hx-swap-oob="beforeend">
 <div class="fade-in-up">
-    {% if message.author == request.user %}
+    {% if message.author == user %}
     <li class="flex justify-end mb-4">
         <div class="bg-green-200 rounded-l-lg rounded-tr-lg p-4 max-w-[75%]">
             <span>{{ message.body }}</span>
@@ -52,3 +53,4 @@
     }
 </style>
 <script>scrollToBottom()</script>
+</div>
